@@ -34,4 +34,18 @@ class QuantityMeasurementTest {
         Inch inch2 = new Inch(1.0);
         Assertions.assertNotEquals(inch1,inch2);
     }
+
+    @Test
+    public void given0YardAnd0Yard_ShouldReturnEqual() {
+        Yard yard1 = new Yard(0.0);
+        Yard yard2 = new Yard(0.0);
+        Assertions.assertEquals(yard1,yard2);
+    }
+
+    @Test
+    public void given0YardAnd1Yard_ShouldReturnNotEqual() {
+        Yard yard1 = new Yard(0.0);
+        Yard yard2 = new Yard(1.0);
+        Assertions.assertNotEquals(yard1,yard2);
+    }
 }
